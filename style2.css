@@ -1,0 +1,104 @@
+body{
+    background-image: url(moon.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 0%;
+    margin: 0%;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('moon.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(1.5px);
+    z-index: -1;
+}
+/* main box */
+.main{
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+}
+/* central box */
+.edit{
+    background-color: white;
+    height: 500px;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.74);
+    animation: fadeIn 1.5s ease;
+}
+@keyframes fadeIn{
+    from{
+         opacity: 0;
+         transform: translateY(20px)
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+/* blessings */
+.bless{
+    margin-top: 40px;
+}
+h3{
+    font-family: Open sans;
+}
+#b{
+    color: rgb(255, 0, 149);
+}
+/* for the button */
+#c{
+    margin-top: 13px;
+    background-color: rgb(255, 0, 149);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-family: Open sans;
+    border-radius: 30px;
+    font-size: 13.5px;
+    cursor: pointer;
+}
+#c:hover{
+    background-color:  rgb(247, 11, 188);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+/* for the image */
+img{
+    height:170x;
+    width:170px;
+    margin-top: 17px;
+}
+/* second button */
+#d{
+    margin-top: 15px;
+    background-color: rgb(255, 0, 149);
+    border: none;
+    height: 40px;
+    width: 100px;
+    border-radius: 30px;
+    color: white;
+    font-family: Open sans;
+}
+#d:hover{
+    background-color:  rgb(247, 11, 188);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
